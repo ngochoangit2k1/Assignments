@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assignments2.css">
+</head>
+<body>
+  <form class="khung">
+        <h2>Bảng tính lãi xuất vay</h2>
+        <label class="a" for="">Số tiền vay</label><input type="number" id="money" placeholder="VND"><br>
+        <label class="a" for="">Thời gian vay</label><input type="number" id="months" placeholder="Tháng"><br>
+        <label class="a" for="">Lãi suất</label><input type="number" id="lai" placeholder="%"><br>
+        <label class="a" for="">Ngày giải ngân</label><input type="date" id="date" min="2000-01-02 max="2020-12-31"><br>
+        <button class="btn" type="button" onclick="myFunction()">Tính</button>
+    
+</form>
+
+
+<table id="myTable" border="1">
+    <thead >
+        <tr>
+          <th id="kiTraNo" colspan="2">Kỳ trả nợ</th>
+          <th id="soGoc" >Số góc còn lại</th>
+          <th id="goc">Gốc</th>
+          <th id="lai">Lãi</th>
+          <th id="tong">Tổng gốc + lãi</th> 
+        </tr>
+    </thead>
+
+</table>
+<br>
+<script src="Assignments2.js"></script>
+</body>
+</html>
